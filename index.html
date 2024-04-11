@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+              //hum yaha koi bhi screen nahi add kar sktai vo hum extend mai add kar sktai h
+              // yaha default attribute hu add h
+      'sm': '500px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+            extend: {
+    //new screen add 
+       screens: {
+        'small': {'min': '320', 'max': '500px'} 
+    },
+              colors: {
+                buildclass: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <h1 class ="text-buildclass text-3xl small:text-center sm:text-right lg:text-left text-center py-5">AffWorld technologies</h1> 
+
+</body>
+</html>
