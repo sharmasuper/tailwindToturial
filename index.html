@@ -6,86 +6,127 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+     tailwind.config = {
           theme: {
-    // theme mai color set kar diy
-            colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
-    },
+          
+          },
 
+          extend : {
             screens: {
-              //hum yaha koi bhi screen nahi add kar sktai vo hum extend mai add kar sktai h
-              // yaha default attribute hu add h
-      'sm': '500px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-    },
-            extend: {
-    //new screen add 
-       screens: {
-        'small': {'min': '320', 'max': '500px'} 
-    },
-              colors: {
-                buildclass: '#da373d',
-                'tahiti': {
-        100: '#cffafe',
-        200: '#a5f3fc',
-        300: '#67e8f9',
-        400: '#22d3ee',
-        500: '#06b6d4',
-        600: '#0891b2',
-        700: '#0e7490',
-        800: '#155e75',
-        900: '#164e63',
-      },
-              }
-              
+               'small': '340px',
             }
           }
-        }
-      </script>
+     }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>  
-    
-  <div class="max-w-[1320px] bg-bermuda mx-auto g-metal text-center mx-auto p-5">
-    <!-- ager mai padding apnai hisab sai daina chahta hu to p-[20px] easai dai skta hu -->
-    <h1>welcome to WScubetech</h1>
+
+  <div class="max-w-[1320px] md:py-[80] py-5 mx-auto">
+    <h1 class="text-4xl text-center">Our Services</h1>
+    <div class="max-width-[1200px] mx-auto py-[30px] grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+      <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white duration-1000 rounded">
+        <i class="fas fa-laptop-code text-2xl text-blue-500 group-hover:text-white duration-1000"></i>
+        <h3 class="text-xl py-2"> web design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus?</p>
+      </div>
+    </div>
   </div>
-<!-- grid or grid-flow-col kai bina row class kam nahi karaigai -->
-<div class="max-w-[1320px] mx-auto grid grid-rows-4 grid-flow-col gap-4">
-  <div class="bg-[green] py-5 ms-96 text-center">hello world - 1</div>
-  <!-- agr hum apnai hisab sai margin daina chahtai h to hum p-[20px] esa bhi dai sktai h -->
-  <div class="bg-[green] py-5 text-center">hello world - 2</div>
-  <div class="bg-[green] py-5 text-center">hello world - 3</div>
-  <div class="bg-[green] py-5 text-center">hello world - 4</div>
-  <div class="bg-[green] py-5 text-center">hello world - 5</div>
-  <div class="bg-[green] py-5 text-center">hello world - 6</div>
-  <div class="bg-[green] py-5 text-center">hello world - 7</div>
-  <div class="bg-[green] py-5 text-center">hello world - 8</div>
-  <div class="bg-[green] py-5 text-center">hello world - 9</div>
 
 
+
+
+
+ <div class="max-w-[1320px] mx-auto">
+  <h1 class="text-4xl text-center py-5">Feature Products</h1>
+ </div>   
+ <div class="max-w-[1320px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-8 px-[20px] sm:grid-cols-2">
+  <div class="text-center shadow-lg">
+    <div class="overflow-hidden rounded flex justify-center"> 
+  <img src="https://www.derewala.com/images/one.jpg" class="hover:scale-125 duration-1000" />
 </div>
+  <h3 class="py-2 text-3xl">derewala industry braslate</h3>
+  <p class="py-2">price-600</p>
+</div>
+<div class="text-center shadow-lg">
+  <div class="overflow-hidden rounded flex justify-center"> 
+<img src="https://www.derewala.com/images/one.jpg" class="hover:scale-125 duration-1000" />
+</div>
+<h3 class="py-2 text-3xl">derewala industry braslate</h3>
+<p class="py-2">price-600</p>
+</div>
+<div class="text-center shadow-lg">
+  <div class="overflow-hidden rounded flex justify-center"> 
+<img src="https://www.derewala.com/images/one.jpg" class="hover:scale-125 duration-1000" />
+</div>
+<h3 class="py-2 text-3xl">derewala industry braslate</h3>
+<p class="py-2">price-600</p>
+</div>
+<div class="text-center shadow-lg">
+  <div class="overflow-hidden rounded flex justify-center"> 
+<img src="https://www.derewala.com/images/one.jpg" class="hover:scale-125 duration-1000" />
+</div>
+<h3 class="py-2 text-3xl">derewala industry braslate</h3>
+<p class="py-2">price-600</p>
+</div>
+ </div>
+ 
 
 
 </body>
