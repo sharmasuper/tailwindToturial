@@ -8,6 +8,20 @@
     <script>
         tailwind.config = {
           theme: {
+    // theme mai color set kar diy
+            colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+    },
+
             screens: {
               //hum yaha koi bhi screen nahi add kar sktai vo hum extend mai add kar sktai h
               // yaha default attribute hu add h
@@ -33,15 +47,43 @@
     },
               colors: {
                 buildclass: '#da373d',
+                'tahiti': {
+        100: '#cffafe',
+        200: '#a5f3fc',
+        300: '#67e8f9',
+        400: '#22d3ee',
+        500: '#06b6d4',
+        600: '#0891b2',
+        700: '#0e7490',
+        800: '#155e75',
+        900: '#164e63',
+      },
               }
+              
             }
           }
         }
       </script>
 </head>
-<body>
-    <div class="container bg-red-900 mx-auto">
-    <h1 class ="text-buildclass text-3xl small:text-center sm:text-right lg:text-left text-center py-5">AffWorld technologies</h1> 
+<body> 
+    <!-- mx-auto class sai hum center mai la sktai margin sai -->
+    <!-- container size depend on breakpoint -->
+    <div class="container mx-auto"> 
+    <h1 class =" text-3xl small:text-center sm:text-right lg:text-left text-[#00FF00]  text-center py-5">AffWorld technologies</h1> 
+    <!-- agar mai vo color use karuga jo tailwind mai naho ho or usnko direct use karna h without build class to mai [] color ko array mai dal duga-->
+  <!--  -->
+    <h1 class="text-bermuda">specified color</h1>       
+     
+  <!-- agar mai chahtha hu ki mai sirf jo mai chahta hu in build color use ho tailwind color use nahi ho to mai theme color use kar skta hu -->
+  <!-- theme color set karni kai badh mai taiwind color use nahi kar skta hu -->
+
+  <h1 class="text-#6d28d9-700">tailwind color text</h1>
+  <!-- ab tailwind color use nahi huai hogai ek bar theme color set karnai badh -->
+
+  <h1 class="text-buildclass">but extend mai color add karaigai to puranai(tailwind color) or new color both are append so don't include color in theme</h1>
+
+  
+   
 </div>
 </body>
 </html>
